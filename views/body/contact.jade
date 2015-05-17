@@ -1,0 +1,56 @@
+extends ../layouts/layout
+
+block pageHead
+
+block content
+    .row
+        .large-8.columns
+            h3 Get in Touch!
+            p
+                | We'd love to hear from you. If you have any questions about our college group or about FBC Waco as a whole,
+                | we want to explain anything we can. Shoot us an email and we will get back to you ASAP.
+            .section-container.tabs(data-section='')
+                section.section
+                    //h5.title
+                    //    // TODO change this to a mailto link
+                    //    | Contact Our Company
+                    .content(data-slug='panel1')
+                        form
+                            .row.collapse
+                                .large-2.columns
+                                    label.inline Your Name
+                                .large-10.columns
+                                    input#yourName(type='text', placeholder='Jane Smith')
+                            .row.collapse
+                                .large-2.columns
+                                    label.inline  Your Email
+                                .large-10.columns
+                                    input#yourEmail(type='text', placeholder='jane@smithco.com')
+                            label What's up?
+                            textarea(rows='4')
+                            button.radius.button(type='submit') Submit
+        .large-4.columns
+            h5 Map
+            p
+                //AIzaSyAM1mvTSe_htEmEUgF6JjZYkGyVYqYeqXs
+                // TODO come up with system for rotating API key so we don't have too many hits for the one project
+                iframe(width='300', height='250', frameborder='0', style='border:0',
+                src='https://www.google.com/maps/embed/v1/place?key=AIzaSyAM1mvTSe_htEmEUgF6JjZYkGyVYqYeqXs\
+                    &q=First+Baptist+Church+of+Waco\
+                    &attribution_source=Google+Maps+Embed+API\
+                    &attribution_web_url=http://www.fbcwaco.org/')
+            p
+                | 500 Webster Ave.
+                br
+                | Waco, TX 76706
+            p
+                | Church Office: 254-752-3000
+                br
+                | Student Leader: 931-622-9567
+    #mapModal.reveal-modal
+        h4 Where We Are
+        p
+            img(src='http://placehold.it/800x600')
+        a.close-reveal-modal(href='#') ×
+
+block pageFoot

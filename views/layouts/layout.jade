@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/stylesheets/foundation/foundation.css')
+    script(src='/javascripts/vendor/modernizr.js')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    block pageHead
+        // Space for page to include individual items of JS or CSS as necessary
+  body
+      include header
+      #main_content
+        block content
+      include footer
+      script(src='/javascripts/vendor/jquery.js')
+      script(src='/javascripts/foundation.min.js')
+      block pageFoot
+          // Space for custom page JS or CSS
+      script.
+          $(document).foundation();
