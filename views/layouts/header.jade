@@ -1,40 +1,40 @@
-.contain-to-grid.sticky
+#top
+.contain-to-grid.fixed
     nav.top-bar(data-topbar='')
         ul.title-area
             li.name
                 h1
-                    // TODO put this behind a database variable
-                    a(href='/'): img(class='smallLogo', src='/images/fbcWacoCollegeLogo_prototype_blankBackground.png')
-            // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+                    a(href='/') FBC Waco College
             li.toggle-topbar.menu-icon
-                a(href='#')
+                // TODO, fix this reference to exclude #
+                a(href='')
                     span
         section.top-bar-section
-            // Right Nav Section
-            ul.right
-                li.has-dropdown
-                    a(href='#') Get to know us
-                    ul.dropdown
-                        li: a(href='#') Staff
-                        li: a(href='#') Student leaders
-                        li: a(href='#') Gathering Times
-                        li: a(href='#') Our Beliefs
-                li.has-dropdown
-                    a(href='#') Get Involved
-                    ul.dropdown
-                        li: a(href='#') Calendar
-                        li: a(href='#') Event sign up
-                        li: a(href='#') Catch a ride
-                li.has-dropdown
-                    a(href='#') Community
-                    ul.dropdown
-                        // Register should present the option to sign up or in
-                        li: a(href='#') Register
-                        li: a(href='#') Address Book
-                        li: a(href='#') Community Board
-                        li: a(href='#') Prayer Board
-                li: a(href='/contact') Contact Us
-            // Left Nav Section
-            ul.left
-                li
-                    a(href='#') Sign in
+            // NOTE: might be a problem (move #nav back to right ul)
+            #nav
+                ul.right
+                    li.has-dropdown
+                        a(href='#') Get to know us
+                        ul.dropdown
+                            li: a(href='#') Staff
+                            li: a(href='#') Student leaders
+                            li: a(href='#') Gathering Times
+                            li: a(href='#') Our Beliefs
+                    li.has-dropdown
+                        a(href='#') Get Involved
+                        ul.dropdown
+                            li: a(href='#') Calendar
+                            li: a(href='#') Event sign up
+                            li: a(href='#') Catch a ride
+                    li.has-dropdown
+                        a(href='#') Community
+                        ul.dropdown
+                            // Register should present the option to sign up or in
+                            li: a(href='#') Register
+                            li: a(href='#') Address Book
+                            li: a(href='#') Community Board
+                            li: a(href='#') Prayer Board
+                    li: a(href='/contact') Contact Us
+                ul.left
+                    li
+                        a(href='#') Sign in
