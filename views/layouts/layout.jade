@@ -6,6 +6,8 @@ html
     link(rel='stylesheet', href='/css/foundation/foundation.css')
     link(rel='stylesheet', href='foundation-icons/foundation-icons.css')
     link(rel='stylesheet', href='/css/custom.css')
+    link(rel='stylesheet', href='/css/navbar.css')
+    link(rel='stylesheet', href='/css/utility.css')
 
     script(src='/js/vendor/modernizr.js')
     title= title
@@ -13,6 +15,7 @@ html
     block pageHead
         // Space for page to include individual items of JS or CSS as necessary
   body
+      include ../partials/utilities
       include header
       #main_content
         block content

@@ -20,17 +20,9 @@ router.get('/contact', function(req, res, next) {
 /**
  * Route to staff page
  */
-router.get('/staff', function(req, res, next) {
+router.get('/about', function(req, res, next) {
     // TODO pull title from database under certain
-    res.render('body/basic_pages/staff', { title: 'Staff' });
-});
-
-/**
- * Route to Student Leader page
- */
-router.get('/leaders', function(req, res, next) {
-    // TODO pull title from database under certain
-    res.render('body/basic_pages/leaders', { title: 'Leaders' });
+    res.render('body/basic_pages/about_us', { title: 'Staff And Leaders' });
 });
 
 /**

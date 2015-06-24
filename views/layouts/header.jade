@@ -3,8 +3,7 @@
     nav.top-bar(data-topbar='')
         ul.title-area
             li.name
-                h1
-                    a(href='/') FBC Waco College
+                h1: a(href='/') FBC Waco College
             li.toggle-topbar.menu-icon
                 // TODO, fix this reference to exclude #
                 a(href='')
@@ -16,9 +15,8 @@
                     li.has-dropdown
                         a(href='#') Get to know us
                         ul.dropdown
-                            li: a(href='#') Staff
-                            li: a(href='#') Student leaders
-                            li: a(href='#') Gathering Times
+                            li: a(href='/about') About Us
+                            li: a(href='/gatherings') Gathering Times
                             li: a(href='#') Our Beliefs
                     li.has-dropdown
                         a(href='#') Get Involved
@@ -32,7 +30,7 @@
                             // Register should present the option to sign up or in
                             li: a(href='#') Register
                             li: a(href='#') Address Book
-                            li: a(href='#') Community Board
+                            li: a(href='#') Community Talk
                             li: a(href='#') Prayer Board
                     li: a(href='/contact') Contact Us
                 ul.left

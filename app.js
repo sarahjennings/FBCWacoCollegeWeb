@@ -56,5 +56,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
+// NOTE: I believe this means I can do something like 'var app = require('app').app' and get to use the app variable in
+// other files. Nifty for spreading out routing and for understanding how to include javascript files
 module.exports = app;

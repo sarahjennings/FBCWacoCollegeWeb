@@ -1,0 +1,66 @@
+extends ../../layouts/layout
+block pageHead
+    link(rel='stylesheet', href='/css/about_us.css')
+
+mixin leaderBlock(name, imgSource)
+    li
+        // This is broken into a grid so we can control how many show up on different sized screens
+        ul.small-block-grid-1.medium-block-grid-2.large-block-grid-2
+            li: img.medium-circle(src=imgSource)
+            li.leaderBio
+                h4= name
+                p.small-text-center.medium-text-left.large-text-left
+                    | This is a leader in our group. They love this group and server it will
+                    | Hopefully they will get to know you too!
+
+mixin sectionHeader(text)
+    section.section.sectionHeader
+        .headerGhost
+        p.headerText.text-center= text
+
+block content
+    .nav_space
+        +sectionHeader('About Us')
+        section.section#aboutUs
+            .row
+                .large-8.columns
+                    img(src='/img/about_us/nicaragua_cover.jpg')
+                .large-4.columns
+                    p#groupBio
+                        | Phasellus facilisis, nunc in lacinia auctor, eros lacus aliquet velit, quis lobortis risus nunc nec nisi. Maecenas et turpis vitae velit volutpat porttitor a sit amet est. Uthasellus facilisis, nunc in lacinia auctor, eros lacus aliquet velit, quis lobortis risus nunc nec.
+                        | Phasellus facilisis, nunc in lacinia auctor, eros lacus aliquet velit, quis lobortis risus nunc nec nisi. Maecenas et turpis vitae velit volutpat porttitor a sit amet est. Uthasellus facilisis, nunc in lacinia auctor, eros lacus aliquet velit, quis lobortis risus nunc nec.
+        +sectionHeader('Staff')
+        section.section#staff
+            .row
+                .large-12.columns
+                    .large-4.columns.large-text-left.medium-text-left.small-text-center
+                        img.medium-circle(src='/img/about_us/curt.jpg', alt='Curt')
+                    .large-8.columns
+                        #pastorBio
+                            h3 Curt Kruschwitz
+                            h5 Associate Pastor to College & Community Missions
+                            p
+                                | Raised in Richmond, VA, Curt enrolled at Georgetown College (Kentucky) in 1998 to
+                                | study Religion, History, and Philosophy. After graduating with his B.A.
+                                | in 2002, Curt spent several years in Europe developing refugee ministries.
+                                | Curt moved to Waco, TX in August 2005 to pursue his M.Div concentrating
+                                | in Missions and World Christianity at George W. Truett Theological Seminary.
+                                | After graduation in May 2008, Curt joined the staff at First Baptist Waco.
+                                | In May 2014, he completed his Doctor of Ministry at Truett.
+
+        +sectionHeader('Our Student Leaders')
+        section.section#leaders
+          .row
+             .large-12.columns
+                ul.small-block-grid-1.medium-block-grid-1.large-block-grid-2
+                   +leaderBlock('Name', 'http://placecage.com/255/255')
+                   +leaderBlock('Name', 'http://fillmurray.com/255/254')
+                   +leaderBlock('Name', 'http://placebear.com/g/255/255')
+                   +leaderBlock('Name', 'http://placecage.com/c/255/255')
+                   +leaderBlock('Name', 'http://placebear.com/255/254')
+                   +leaderBlock('Name', 'http://fillmurray.com/254/255')
+                   +leaderBlock('Name', 'http://placecage.com/255/255')
+                   +leaderBlock('Name', 'http://fillmurray.com/g/254/255')
+
+
+block pageFoot
