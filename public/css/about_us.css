@@ -1,0 +1,49 @@
+h2 {
+    margin-bottom: 25px;
+}
+
+#aboutUs {
+    background: rgba(0, 38, 77, 0.93);
+    padding-bottom: 100px;
+    color: white;
+
+}
+
+#aboutUs img {
+    width: 100%;
+}
+
+#groupBio {
+    margin-top: 25px;
+}
+
+#staff {
+    /*margin-top: 20px;*/
+    background: rgb(51, 94, 181);
+}
+
+#staff img {
+    width: 255px;
+}
+
+#pastorBio h3 {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+#pastorBio h5 {
+    color: black;
+    text-align: left;
+}
+
+
+#leaders {
+    background: rgba(0, 38, 77, 0.93);
+    color: white;
+}
+
+#leaders h4 {
+    color: #ea421e;
+    text-align: left;
+}

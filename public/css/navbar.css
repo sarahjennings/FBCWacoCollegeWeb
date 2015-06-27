@@ -1,0 +1,62 @@
+.contain-to-grid{
+    background: rgb(51, 94, 181);
+}
+
+.top-bar{
+    background: none;
+    -webkit-box-shadow: 0 8px 10px -6px black;
+       -moz-box-shadow: 0 8px 10px -6px black;
+            box-shadow: 0 8px 10px -6px black;
+}
+
+.top-bar .name h1 a {
+    color: rgb(192,192,192);
+}
+
+.top-bar-section ul li,
+.top-bar-section li:not(.has-form) a:not(.button){
+    background: none;
+
+}
+
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+    background: none;
+}
+
+.top-bar-section li:not(.has-form) a:hover:not(.button){
+    background: rgb(37, 64, 128);
+    text-decoration: underline;
+
+}
+
+.top-bar-section ul li > a{
+    color: rgb(192,192,192);
+    font-weight: bold;
+}
+
+.active{
+    text-decoration: underline;
+    font-weight: bold !important;
+}
+
+@media only screen and (min-width: 58.75em) {
+    .contain-to-grid .top-bar {
+        max-width: none;
+    }
+    .top-bar-section .dropdown li:not(.has-form):not(.active){
+        background: none;
+    }
+    /* For Dropdown items in the current list */
+    .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+        background: rgb(51, 94, 181);
+        -webkit-box-shadow: 0px 4px 10px 0px black;
+           -moz-box-shadow: 0px 4px 10px 0px black;
+                box-shadow: 0px 4px 10px 0px black;
+    }
+
+    /*For dropdown items being hovered over*/
+    .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+        background: rgb(37, 64, 128);
+    }
+}

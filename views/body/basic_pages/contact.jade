@@ -17,15 +17,10 @@ block content
                     .content(data-slug='panel1')
                         form
                             .row.collapse
-                                .large-2.columns
-                                    label.inline Your Name
-                                .large-10.columns
-                                    input#yourName(type='text', placeholder='Jane Smith')
-                            .row.collapse
-                                .large-2.columns
-                                    label.inline  Your Email
-                                .large-10.columns
-                                    input#yourEmail(type='text', placeholder='jane@smithco.com')
+                                .large-2.columns: label.inline Your Name
+                                .large-10.columns: input#yourName(type='text', placeholder='Jane Smith')
+                                .large-2.columns: label.inline  Your Email
+                                .large-10.columns: input#yourEmail(type='text', placeholder='jane@smithco.com')
                             label What's up?
                             textarea(rows='4')
                             button.radius.button(type='submit') Submit
